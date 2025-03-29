@@ -1,0 +1,124 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.container-wrapper {
+    @apply container mx-auto px-6 mt-10;
+}
+
+nav {
+    @apply bg-gray-900 text-white py-4;
+}
+
+.containerr {
+    @apply flex justify-between items-center mx-auto px-6;
+}
+
+.logo {
+    @apply text-2xl font-bold tracking-wide;
+}
+
+ul {
+    @apply hidden md:flex gap-6; 
+}
+
+ul li {
+    @apply list-none;
+}
+
+ul a {
+    @apply hover:text-gray-400 transition;
+}
+
+.menu-button {
+    @apply md:hidden text-2xl focus:outline-none;
+}
+
+.main-container {
+    @apply container mx-auto;
+}
+
+.content-wrapper {
+    @apply flex flex-col md:flex-row items-center justify-center gap-6 py-10; 
+}
+
+.image-container {
+    @apply flex justify-center;
+}
+
+.image-container img {
+    @apply w-2/3 md:w-[350px] lg:w-[450px] rounded-full shadow-lg mx-auto; 
+}
+
+.text-container {
+    @apply md:w-1/2 text-center md:text-left px-4; 
+}
+
+.text-container h1 {
+    @apply text-4xl md:text-5xl font-bold text-gray-900;
+}
+
+.text-container p {
+    @apply mt-3 text-gray-600;
+}
+
+.buttons {
+    @apply mt-5 flex flex-col md:flex-row gap-3;
+}
+
+.btn-blue {
+    @apply bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600;
+}
+
+.btn-green {
+    @apply bg-green-500 text-white px-4 py-2 rounded hover:bg-green-600;
+}
+
+.card-container {
+    @apply container mx-auto grid grid-cols-1 md:grid-cols-3 gap-6 py-8;
+}
+
+.card {
+    @apply bg-white shadow-lg rounded-lg overflow-hidden;
+}
+
+.card img {
+    @apply w-full h-48 object-cover;
+}
+
+.card-content {
+    @apply p-4;
+}
+
+.card-content h5 {
+    @apply text-lg font-semibold;
+}
+
+.card-content p {
+    @apply text-gray-600;
+}
+
+.swiper-container {
+    @apply w-full flex justify-center mt-6; 
+}
+
+.mySwiper {
+    @apply w-full md:w-4/5 lg:w-3/5; 
+}
+
+.swiper-slide {
+    @apply flex justify-center items-center;
+}
+
+.swiper-slide img {
+    @apply w-full h-76 object-cover rounded-lg;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    @apply text-white;
+}
+
+.footer {
+    @apply bg-gray-900 text-white text-center py-4 mt-10;
+}
